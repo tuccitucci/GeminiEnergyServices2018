@@ -1,0 +1,122 @@
+/* ---------------
+ * Coming Soon
+ * ---------------*/
+
+#cs-wrapper {
+	padding: 0 100px;
+	height: 100%;
+	background: {
+		image: url('../img/comingsoon-bg.jpg');
+		repeat: no-repeat;
+		position: center;
+	}
+
+	@include max-screen($break-medium) {
+		padding: 0 30px;
+	}
+}
+
+.cs-header {
+	position: absolute;
+	top: 30px;
+}
+
+.cs-right-section {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 460px;
+	height: 100%;
+	padding: 30px;
+	background-color: rgba(#fff, .95);
+
+	@include max-screen($break-large) {
+		position: relative;
+		bottom: 0;
+		height: auto;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.main-heading {
+	font-size: 75px;
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 30px;
+	color: #636363;
+
+	@include max-screen($break-small) {
+		font-size: 38px;
+	}
+}
+
+.countdown {
+	background-color: transparent;
+	border: none;
+
+	.countdown-amount {
+		font-size: 56px;
+		color: #636363;
+		line-height: 1;
+	}
+
+	.countdown-period {
+		font-size: 22px;
+		color: #636363;
+		text-transform: lowercase;
+	}
+
+	@include max-screen($break-small) {
+		.countdown-amount {
+			font-size: 22px;
+		}
+
+		.countdown-period {
+			font-size: 18px;
+		}
+	}
+}
+
+.countdown-show4 .countdown-section {
+	width: auto;
+	margin-right: 110px;
+
+	@include max-screen($break-large) {
+		margin-right: 80px;
+	}
+
+	@include max-screen($break-medium) {
+		margin-right: 40px;
+	}
+
+	@include max-screen($break-xsmall) {
+		margin-right: 22px;
+	}
+}
+
+.cs-social-icons {
+	margin-bottom: 0;
+	position: absolute;
+	bottom: 30px;
+}
+
+.cs-footer {
+	position: absolute;
+	bottom: 0;
+	background: none;
+
+	p {
+		font-size: 13px;
+	}
+
+	@include max-screen($break-large) {
+		position: relative;
+		margin-top: 30px;
+	}
+}
+
+
+
+

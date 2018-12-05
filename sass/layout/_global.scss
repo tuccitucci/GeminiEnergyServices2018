@@ -1,0 +1,98 @@
+/* ----------------------
+ * Global layout styles
+ * ---------------------*/
+
+html, body {
+	height: 100%;
+}
+
+.layout-boxed #wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0 0 5px #ccc;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.page-content {
+	margin: 80px auto;
+}
+
+.widget {
+	margin-bottom: 60px;
+
+	&.widget-bordered {
+		@include border-radius(3px);
+
+		border: 1px solid #e2e2e2;
+		padding: 20px;
+	}
+
+	.widget-title {
+		margin-bottom: 20px;
+		margin-top: 0;
+		font-size: 20px;
+		font-weight: 700;
+		color: $section-heading-color;
+	}
+}
+
+@include max-screen($break-small) {
+	.row div + div .sidebar {
+		margin-top: 50px;
+	}
+}
+
+.layout-full {
+	.logo {
+		width: 110px;
+	}
+
+	.header {
+		width: 100%;
+		margin-top: 50px;
+		text-align: center;
+
+		.heading {
+			font-size: 28px;
+			font-weight: normal;
+		}
+	}
+
+	@include max-screen($break-xsmall) {
+		.header {
+			position: relative;
+		}
+	}
+}
+
+.table-wrap {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.flex-row {
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+}
+
+.flex-col {
+	display: flex;
+	width: 33%;
+	padding: 20px;
+}
+
+@media (max-width: 740px) {
+  .flex-col {
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "geminienergy",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Jeffrey Bertucci",
+  "license": "ISC",
+  "main": "server.js",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "animate.css": "^3.7.0",
+    "bootstrap": "^3.3.7",
+    "easing": "^0.0.4",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "jquery": "^3.2.1",
+    "serve-static": "^1.13.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
