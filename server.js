@@ -8,7 +8,12 @@ const port = process.env.PORT || 8080;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+if (process.env.SENDGRID_API_KEY) {
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  console.warn("YAY! SENDGRID_API_KEY SET!");
+} else {
+  console.warn("OH NO!! YOU NEED TO SET YOUR SENDGRID API KEY!");
+}
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -28,14 +33,7 @@ app.post('/api/mail', function(req, res) {
     to: 'info@geminienergyservices.com',
     from: 'requestquote@geminienergy.com',
     subject: `Request Quote: ${data['request-customer']}`,
-    html: createMsgContent(data),
-    attachments: [
-      {
-        content: `Filename: ${data['request-attachments']}`,
-        filename: `Filename: ${data['request-attachments']}`,
-        type: 'plain/text',
-      },
-    ],
+    html: createMsgContent(data)
   };
 
   sgMail.send(msg)
