@@ -40,7 +40,7 @@ a {
 
 	.section-lead {
 		font-size: 16px;
-		color: lighten($body-font-color, 20%);
+		color: $body-font-color;
 	}
 
 	.icon {

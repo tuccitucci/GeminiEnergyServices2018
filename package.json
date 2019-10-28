@@ -13,9 +13,11 @@
     "express": "^4.16.4",
     "http": "0.0.0",
     "jquery": "^3.2.1",
+    "node-sass": "^4.13.0",
     "serve-static": "^1.13.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "scss": "node-sass --watch sass -o css"
   }
 }
