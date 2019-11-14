@@ -9,9 +9,8 @@
 		margin: 1em 2.5em;
 	}
 
-	img {
-		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+	li img {
+		width: 150px;
 	}
 
 	@include max-screen($break-xsmall) {
