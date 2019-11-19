@@ -59,7 +59,7 @@
 		li.nav-contact-header {
 	    vertical-align: top;
 			padding-left: 10px;
-			
+
 			> a {
 				width: auto;
 				height: auto;
@@ -146,6 +146,8 @@
 
 		.navbar-right {
 			margin-top: 8px;
+			display: flex;
+			justify-content: space-around;
 
 			> li {
 				&,
@@ -155,9 +157,12 @@
 			}
 		}
 
-		.left,
 		.right {
 			float: none;
+		}
+
+		.left {
+			display: none;
 		}
 	}
 }
