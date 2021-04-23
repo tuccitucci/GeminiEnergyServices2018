@@ -76,7 +76,7 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(#000, .8);
+			background-color: rgba(#000, .6);
 		}
 
 		.breadcrumb > li + li:before {
@@ -137,6 +137,18 @@
 
 #page-header-services {
 	background-image: url('../images/turbine-1.jpg');
+	margin: 88px 0;
+	background-position: 0 -120px;
+}
+
+#page-header-wind {
+	background-image: url('../assets/img/page-heros/wind.JPG');
+	margin: 88px 0;
+	background-position: 0 -120px;
+}
+
+#page-header-solar {
+	background-image: url('../assets/img/page-heros/solar.png');
 	margin: 88px 0;
 	background-position: 0 -120px;
 }
