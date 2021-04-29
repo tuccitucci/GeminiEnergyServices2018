@@ -10888,6 +10888,11 @@ ul.nav-categories {
         display: block;
         width: 50%; } }
 
+.engineering .content-images img {
+  width: 100%; }
+.engineering .content-lead p {
+  text-align: left; }
+
 /* -----------------
  * Helper classes
  * -----------------*/
