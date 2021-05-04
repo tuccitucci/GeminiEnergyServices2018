@@ -10869,12 +10869,17 @@ ul.nav-categories {
 
 #wrapper.safety h4 {
   font-weight: normal !important; }
+#wrapper.safety section.safety-content p {
+  font-size: 1.7rem;
+  text-indent: 1.5rem;
+  margin-bottom: 2rem; }
 #wrapper.safety .content-images {
   width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
   @media screen and (min-width: 768px) {
     #wrapper.safety .content-images {
       height: 400px;
@@ -10892,7 +10897,8 @@ ul.nav-categories {
 .engineering {
   /* box-shadow */ }
   .engineering .content-images img {
-    width: 100%; }
+    width: 100%;
+    height: 400px; }
   .engineering section {
     max-width: 70%;
     margin: 0 auto; }
