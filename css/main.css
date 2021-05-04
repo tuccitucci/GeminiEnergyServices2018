@@ -2,6 +2,7 @@
 /* ---------------
  * Global Styles
  * --------------- */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
 body {
   font-family: Lato, sans-serif;
   font-size: 15px;
@@ -10888,8 +10889,85 @@ ul.nav-categories {
         display: block;
         width: 50%; } }
 
-.engineering .content-images img {
-  width: 100%; }
+.engineering {
+  /* box-shadow */ }
+  .engineering .content-images img {
+    width: 100%; }
+  .engineering section {
+    max-width: 70%;
+    margin: 0 auto; }
+  .engineering section.with-image-left img {
+    float: left;
+    padding: 0 3rem; }
+  .engineering section.with-image-right img {
+    float: right;
+    padding-right: 3rem; }
+  .engineering section h4 {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1rem; }
+  .engineering section p {
+    padding: 1rem; }
+  .engineering h2 {
+    text-align: center; }
+  .engineering h2 + h4 {
+    text-align: center; }
+  .engineering ol.gradient-list > li, .engineering ol.gradient-list > li::before {
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05); }
+  .engineering ol.gradient-list {
+    counter-reset: gradient-counter;
+    list-style: none;
+    margin: 1.75rem 0;
+    padding-left: 1rem;
+    padding-top: 2rem; }
+    .engineering ol.gradient-list > li {
+      background: white;
+      border-radius: 0 0.5rem 0.5rem 0.5rem;
+      counter-increment: gradient-counter;
+      margin-top: 1rem;
+      min-height: 3rem;
+      padding: 1rem 1rem 1rem 3rem;
+      position: relative; }
+      .engineering ol.gradient-list > li::before, .engineering ol.gradient-list > li::after {
+        background: linear-gradient(135deg, #004680 0%, #91c7ff 100%);
+        border-radius: 1rem 1rem 0 1rem;
+        content: '';
+        height: 3rem;
+        left: -1rem;
+        overflow: hidden;
+        position: absolute;
+        top: -1rem;
+        width: 3rem; }
+      .engineering ol.gradient-list > li::before {
+        align-items: flex-end;
+        content: counter(gradient-counter);
+        color: #fafafa;
+        display: flex;
+        font: 900 1.2em/1 'Montserrat';
+        justify-content: flex-end;
+        padding: 0.125em 0.25em;
+        z-index: 1; }
+      .engineering ol.gradient-list > li:nth-child(10n+1):before {
+        background: linear-gradient(135deg, rgba(145, 199, 255, 0.2) 0%, rgba(0, 56, 103, 0.2) 100%); }
+      .engineering ol.gradient-list > li:nth-child(10n+2):before {
+        background: linear-gradient(135deg, rgba(145, 199, 255, 0.4) 0%, rgba(0, 56, 103, 0.4) 100%); }
+      .engineering ol.gradient-list > li:nth-child(10n+3):before {
+        background: linear-gradient(135deg, rgba(145, 199, 255, 0.6) 0%, rgba(0, 56, 103, 0.6) 100%); }
+      .engineering ol.gradient-list > li:nth-child(10n+4):before {
+        background: linear-gradient(135deg, rgba(145, 199, 255, 0.8) 0%, rgba(0, 56, 103, 0.8) 100%); }
+      .engineering ol.gradient-list > li:nth-child(10n+5):before {
+        background: linear-gradient(135deg, #91c7ff 0%, #003867 100%); }
+      .engineering ol.gradient-list > li:nth-child(10n+6):before {
+        background: linear-gradient(135deg, rgba(145, 199, 255, 0.8) 0%, rgba(0, 56, 103, 0.8) 100%); }
+      .engineering ol.gradient-list > li:nth-child(10n+7):before {
+        background: linear-gradient(135deg, rgba(145, 199, 255, 0.6) 0%, rgba(0, 56, 103, 0.6) 100%); }
+      .engineering ol.gradient-list > li:nth-child(10n+8):before {
+        background: linear-gradient(135deg, rgba(145, 199, 255, 0.4) 0%, rgba(0, 56, 103, 0.4) 100%); }
+      .engineering ol.gradient-list > li:nth-child(10n+9):before {
+        background: linear-gradient(135deg, rgba(145, 199, 255, 0.2) 0%, rgba(0, 56, 103, 0.2) 100%); }
+      .engineering ol.gradient-list > li:nth-child(10n+10):before {
+        background: linear-gradient(135deg, rgba(145, 199, 255, 0) 0%, rgba(0, 56, 103, 0) 100%); }
+      .engineering ol.gradient-list > li + li {
+        margin-top: 2rem; }
 
 /* -----------------
  * Helper classes
