@@ -11,14 +11,25 @@
     margin: 0 auto;
   }
 
-  section.with-image-left img {
+  section.with-image-left .img-150 {
     float: left;
-    padding: 0 3rem;
+    margin: 0 3rem;
   }
 
-  section.with-image-right img {
+  section.with-image-right .img-150 {
     float: right;
-    padding-right: 3rem;
+    margin: 0 3rem;
+  }
+
+  .img-150 {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: inline;
+  }
+
+  .img-150 img {
+    height: 150px;
   }
 
   section h4 {
@@ -28,6 +39,7 @@
 
   section p {
     padding: 1rem;
+    display: inline;
   }
 
   h2 {

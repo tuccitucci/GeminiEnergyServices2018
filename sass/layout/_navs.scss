@@ -5,6 +5,8 @@
 .nav {
 	font-family: $nav-font-family;
 	font-weight: $nav-font-weight;
+	display: flex;
+	align-items: center;
 }
 
 .nav-topbar {

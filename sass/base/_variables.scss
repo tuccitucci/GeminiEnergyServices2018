@@ -34,10 +34,11 @@ $body-font-line-height: 1.6;
 $body-color-bg: #fff;
 
 // Navbar, navbar dropdown menu
+$navbar-default-link-color: #FFF;
 $navbar-default-link-active-bg: transparent;
 $navbar-default-link-active-color: $brand-primary;
-$navbar-default-color-bg: #fff;
-$navbar-border-color: #e7e7e7;
+$navbar-default-color-bg: $brand-primary;
+$navbar-border-color: $brand-primary;
 
 $navbar-dropdown-min-width: 225px;
 
