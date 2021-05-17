@@ -9752,7 +9752,7 @@ html, body {
   background-color: #004680; }
   .navbar-default .navbar-nav > li > a {
     color: #FFF;
-    font-size: 12px;
+    font-size: 1.4rem;
     font-weight: bold; }
     .navbar-default .navbar-nav > li > a:hover {
       opacity: .6;
