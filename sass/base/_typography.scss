@@ -30,6 +30,9 @@ a {
 .section-heading {
 	margin-bottom: 30px;
 	color: $section-heading-color;
+	border-bottom: 1px solid $section-heading-border-color;
+	text-align: left;
+	padding: 40px;
 
 	&.heading-small {
 		.heading {
@@ -39,7 +42,7 @@ a {
 	}
 
 	.section-lead {
-		font-size: 16px;
+		font-size: 22px;
 		color: $body-font-color;
 	}
 

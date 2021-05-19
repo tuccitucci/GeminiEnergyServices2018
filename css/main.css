@@ -78,12 +78,15 @@ a {
 
 .section-heading {
   margin-bottom: 30px;
-  color: #636363; }
+  color: #636363;
+  border-bottom: 1px solid #b9b9b9;
+  text-align: left;
+  padding: 40px; }
   .section-heading.heading-small .heading {
     font-size: 24px;
     font-weight: 700; }
   .section-heading .section-lead {
-    font-size: 16px;
+    font-size: 22px;
     color: #3e3e3e; }
   .section-heading .icon {
     position: relative;
@@ -10912,7 +10915,7 @@ ul.nav-categories {
     width: 100%;
     height: 400px; }
   .engineering section {
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto; }
   .engineering section.with-image-left .img-150 {
     float: left;
@@ -10928,13 +10931,10 @@ ul.nav-categories {
   .engineering .img-150 img {
     height: 150px; }
   .engineering section h4 {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #b9b9b9;
     padding-bottom: 1rem; }
   .engineering section p {
-    padding: 1rem;
     display: inline; }
-  .engineering h2 {
-    text-align: center; }
   .engineering h2 + h4 {
     text-align: center; }
   .engineering ol.gradient-list > li, .engineering ol.gradient-list > li::before {
@@ -10951,6 +10951,7 @@ ul.nav-categories {
       counter-increment: gradient-counter;
       margin-top: 1rem;
       min-height: 3rem;
+      font-size: 1.7rem;
       padding: 1rem 1rem 1rem 3rem;
       position: relative; }
       .engineering ol.gradient-list > li::before, .engineering ol.gradient-list > li::after {
@@ -10968,7 +10969,9 @@ ul.nav-categories {
         content: counter(gradient-counter);
         color: #fafafa;
         display: flex;
-        font: 900 1.2em/1 'Montserrat';
+        font-weight: 900;
+        font-size: 1.2em/1;
+        font-family: 'Montserrat';
         justify-content: flex-end;
         padding: 0.125em 0.25em;
         z-index: 1; }

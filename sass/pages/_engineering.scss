@@ -7,7 +7,7 @@
   }
 
   section {
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
   }
 
@@ -33,18 +33,19 @@
   }
 
   section h4 {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid $section-heading-border-color;
     padding-bottom: 1rem;
   }
 
   section p {
-    padding: 1rem;
+
     display: inline;
   }
 
-  h2 {
-    text-align: center;
-  }
+  // h2 {
+  //   text-align: left;
+  //   padding: 40px;
+  // }
 
   h2 + h4 {
     text-align: center;
@@ -74,8 +75,10 @@
     counter-increment: gradient-counter;
     margin-top: 1rem;
     min-height: 3rem;
+    font-size: 1.7rem;
     padding: 1rem 1rem 1rem 3rem;
     position: relative;
+
     &::before,
     &::after {
       background: linear-gradient(135deg, $blue 0%,$green 100%);
@@ -88,13 +91,16 @@
       top: -1rem;
       width: 3rem;
     }
+
     &::before {
       align-items: flex-end;
       @extend %boxshadow;
       content: counter(gradient-counter);
       color: $white;
       display: flex;
-      font: 900 1.2em/1 'Montserrat';
+      font-weight: 900;
+      font-size: 1.2em/1;
+      font-family: 'Montserrat';
       justify-content: flex-end;
       padding: 0.125em 0.25em;
       z-index: 1;

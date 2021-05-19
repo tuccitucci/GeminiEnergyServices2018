@@ -59,6 +59,7 @@ $page-header-color-bg: #fefefe;
 $section-bg-dark: #393939;
 $section-color-dark: lighten($section-bg-dark, 30%);
 $section-heading-color: #636363;
+$section-heading-border-color: lighten($section-bg-dark, 50%);
 
 // Footer
 $footer-bg-light: #F8F8F8;
