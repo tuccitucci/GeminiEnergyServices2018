@@ -45,7 +45,7 @@
 			&:hover,
 			&:focus {
 				background-color: $navbar-default-link-active-bg;
-				color: $navbar-default-link-active-color;
+				color: $nav-font-color-light;
 			}
 		}
 
@@ -53,7 +53,7 @@
 			&,
 			&:hover,
 			&:focus {
-				color: $brand-primary;
+				color: $nav-font-color-light;
 				background-color: transparent;
 			}
 		}
@@ -68,10 +68,6 @@
 			display: inline-block;
 			margin-left: .5rem;
 		}
-	}
-
-	.navbar-form {
-		border: none;
 	}
 
 	.navbar-toggle {
@@ -96,14 +92,19 @@
 		padding-right: 0;
 	}
 
-	.nav-contact-header {
-
-	}
-
 	@include max-screen($break-small) {
 		.navbar-collapse {
 			padding-left: inherit;
 			padding-right: inherit;
+		}
+
+		.navbar-nav .open .dropdown-menu > li > a {
+			color: #FFF;
+
+			&:hover {
+				color: #FFF;
+				opacity: .8;
+			}
 		}
 	}
 
@@ -121,6 +122,8 @@
 	margin-left: -10px;
 }
 
+
+
 .navbar-absolute {
 	position: absolute;
 	width: 100%;
@@ -133,116 +136,7 @@
 	background-color: rgba(#fff, .8);
 }
 
-.navbar-no-background {
-	background: none !important;
-	border: none;
-	z-index: 9999;
 
-	@include max-screen($break-medium) {
-		position: absolute;
-		background: #fff !important;
-
-
-		&.navbar-light-font {
-			background: rgba(#232323, .95) !important;
-
-			.main-navbar-nav > li {
-				border-bottom-color: lighten(#232323, 12%);
-
-				a:focus {
-					color: #fff;
-				}
-			}
-
-			.main-navbar-nav .dropdown > .dropdown-menu {
-				background-color: #232323;
-
-				> li > a {
-					color: #fff;
-				}
-
-				.dropdown .dropdown-menu {
-					background-color: #232323;
-				}
-			}
-
-			.main-navbar-nav .dropdown-mega .dropdown-menu {
-				li a,
-				li > span {
-					color: #fff;
-				}
-			}
-
-			.secondary-navbar-nav > li a:focus {
-				color: #fff;
-			}
-		}
-	}
-}
-
-.navbar-light-font {
-	@include transition(all .3s ease-out);
-
-	background-color: rgba(#232323, .95);
-	border: none;
-
-	.navbar-nav > li {
-		> a {
-			color: #fff;
-		}
-	}
-
-	.navbar-toggle {
-		&,
-		&:hover,
-		&:focus {
-			background: #232323;
-		}
-
-		i {
-			color: #fff;
-		}
-	}
-
-	.btn-outline {
-		border-color: #fff;
-
-		&.btn-primary {
-			&:hover,
-			&:focus {
-				background-color: $btn-primary-bg;
-				border-color: $btn-primary-border;
-				color: #fff;
-			}
-		}
-	}
-
-	@include max-screen($break-medium) {
-		.open .dropdown-menu > li > a {
-			&,
-			&:hover,
-			&:focus {
-				color: #fff !important;
-				background-color: transparent !important;
-			}
-
-			&:hover,
-			&:focus {
-				background-color: #3a3a3a !important;
-			}
-		}
-
-
-		.open .dropdown-menu > .active > a {
-			&,
-			&:hover,
-			&:focus {
-				color: #fff !important;
-				background-color: #3a3a3a !important;
-			}
-		}
-	}
-}
 
 .navbar-fixed-top {
 	&.navbar-shrinkable .navbar-brand img {
@@ -350,7 +244,7 @@
 				> a {
 					display: block;
 					padding: 8px 0;
-					color: $nav-font-color-dark;
+					color: $nav-font-color-light;
 					text-decoration: none;
 					font-weight: normal;
 
@@ -364,7 +258,7 @@
 					&,
 					&:hover,
 					&:focus {
-						color: $brand-primary;
+						color: $nav-font-color-light;
 					}
 				}
 			}
@@ -386,7 +280,6 @@
 
 	@include max-screen($break-medium) {
 		> li {
-			border-bottom: 1px solid #f3f3f3;
 
 			&:last-child {
 				border-bottom: none;
@@ -409,11 +302,11 @@
 			position: relative;
 			width: 100%;
 			margin-bottom: 15px;
-			background-color: #f9f9f9;
+			background-color: transparent;
 
 			.dropdown .dropdown-menu {
 				position: relative;
-				left: 0;
+				right: 0;
 				border-top: none;
 				background-color: #f9f9f9;
 
@@ -471,10 +364,15 @@
 	@include max-screen($break-medium) {
 		margin: 0;
 
+		.dropdown {
+			text-align: right !important;
+		}
+
 		.open .dropdown-menu {
 			position: absolute;
 			top: 100%;
 			background-color: #fff;
+			text-align: right;
 		}
 
 		&.as-icon {
@@ -511,5 +409,17 @@
 	.navbar-collapse.collapse.in {
 		display: block !important;
 		overflow-y: auto !important;
+	}
+
+	li.nav-item.dropdown.open {
+		text-align: right;
+
+		.dropdown-menu {
+			text-align: right;
+		}
+	}
+
+	a:active, a:focus {
+		color: $nav-font-color-light !important;
 	}
 }

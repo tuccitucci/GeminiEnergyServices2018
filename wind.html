@@ -39,46 +39,7 @@
   <!-- WRAPPER -->
   <div id="wrapper" class="services">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
-          <span class="sr-only">Toggle Navigation</span>
-          <i class="fa fa-bars"></i>
-        </button>
-        <a href="index.html" class="navbar-brand">
-          <img src="assets/logos/gemini_logo_wht.png" alt="Gemini Energy Logo">
-        </a>
-        <div id="main-nav-collapse" class="navbar-split collapse navbar-collapse">
-          <ul class="nav navbar-nav main-navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Our Services
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a href="/wind.html">wind</a></li>
-                <li><a href="/solar.html">solar</a></li>
-                <li><a href="/engineering.html">engineering</a></li>
-                <li><a href="/safetytraining.html">safety & training</a></li>
-                <li><a href="/experience.html">experience</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="/careers.html">Careers</a>
-            </li>
-            <li>
-              <a href="/aboutus.html">About Us</a>
-            </li>
-            <li class"nav-button"><a href="https://tmail.tetratech.com/" target="_blank" class="as-button"><span class="btn btn-primary">GEMINI WEBMAIL</span></a></li>
-            <li class"nav-button"><a href="https://tetratechinc.sharepoint.com/teams/GeminiEnergyServices/" target="_blank" class="as-button"><span class="btn btn-primary">TECHNICIAN SIGN IN</span></a></li>
-          </ul>
-        </div>
-
-        <a href="http://www.tetratech.com" target="_blank" class="navbar-brand navbar-brand-right hide-mobile">
-          <img src="assets/logos/TT_logo_wht.png" alt="Tetra Tech Logo">
-        </a>
-        <!-- END MAIN NAVIGATION -->
-      </div>
-    </nav>
+    <div id="c-navbar"></div>
     <!-- END NAVBAR -->
 
     <!-- <div id="page-header-wind" class="page-header has-background-image hide-mobile">
@@ -381,6 +342,14 @@
   </script>
 
   <!-- End of  Zendesk Widget script -->
+
+  <!-- REACT -->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- COMPONENTS -->
+  <script src="assets/js/components/nav.js" type="text/babel"></script>
 
   <!-- JAVASCRIPT -->
   <script src="node_modules/jquery/dist/jquery.js"></script>
