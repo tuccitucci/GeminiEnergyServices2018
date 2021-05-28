@@ -195,7 +195,7 @@
 		> li > a {
 			padding: 10px 20px;
 			position: relative;
-			color: $nav-font-color-light;
+			color: $nav-font-color-dark;
 
 			&:hover,
 			&:focus {
@@ -413,11 +413,14 @@
 
 	li.nav-item.dropdown.open {
 		text-align: right;
-		color: white;
 
 		.dropdown-menu {
 			text-align: right;
 		}
+	}
+
+	.main-navbar-nav li > .dropdown-menu > li > a {
+		color: #FFF;
 	}
 
 	a:active, a:focus {

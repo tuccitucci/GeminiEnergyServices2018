@@ -9867,7 +9867,7 @@ html, body {
     .main-navbar-nav li > .dropdown-menu > li > a {
       padding: 10px 20px;
       position: relative;
-      color: #FFF; }
+      color: #3B3B3B; }
       .main-navbar-nav li > .dropdown-menu > li > a:hover, .main-navbar-nav li > .dropdown-menu > li > a:focus {
         background-color: transparent;
         opacity: 0.8; }
@@ -10002,10 +10002,12 @@ html, body {
     overflow-y: auto !important; }
 
   li.nav-item.dropdown.open {
-    text-align: right;
-    color: white; }
+    text-align: right; }
     li.nav-item.dropdown.open .dropdown-menu {
       text-align: right; }
+
+  .main-navbar-nav li > .dropdown-menu > li > a {
+    color: #FFF; }
 
   a:active, a:focus {
     color: #FFF !important; } }
