@@ -10736,31 +10736,51 @@ ul.nav-categories {
     .btn-toggle-following:hover i:before {
       content: '\f00d'; }
 
-#wrapper.safety h4 {
-  font-weight: normal !important; }
-#wrapper.safety section.safety-content p {
-  font-size: 1.7rem;
-  margin-bottom: 2rem; }
-#wrapper.safety .content-images {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center; }
-  @media screen and (min-width: 768px) {
-    #wrapper.safety .content-images {
-      height: 400px;
-      flex-direction: row; } }
-  #wrapper.safety .content-images img {
-    width: 50%; }
-  #wrapper.safety .content-images img:last-child {
-    display: none;
-    width: 100%; }
+#wrapper.safety {
+  /* Center the table on the page */ }
+  #wrapper.safety h4 {
+    font-weight: normal !important; }
+  #wrapper.safety section.safety-content p {
+    font-size: 1.7rem;
+    margin-bottom: 2rem; }
+  #wrapper.safety section.safety-table {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 55vh;
+    /* Full viewport height */
+    gap: 3rem; }
+    #wrapper.safety section.safety-table table {
+      border-collapse: collapse;
+      width: 90%;
+      /* You can adjust the width as needed */ }
+    #wrapper.safety section.safety-table th, #wrapper.safety section.safety-table td {
+      padding: 10px;
+      text-align: center;
+      /* Center text in both headers and cells */ }
+    #wrapper.safety section.safety-table th {
+      background-color: #f2f2f2;
+      /* Optional: gives a background color to header cells */ }
+    #wrapper.safety section.safety-table table, #wrapper.safety section.safety-table th, #wrapper.safety section.safety-table td {
+      border: 2px solid black; }
+  #wrapper.safety .content-images {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px; }
     @media screen and (min-width: 768px) {
-      #wrapper.safety .content-images img:last-child {
-        display: block;
-        width: 50%; } }
+      #wrapper.safety .content-images {
+        height: 600px;
+        flex-direction: row; } }
+    #wrapper.safety .content-images img {
+      height: 100%; }
+      @media screen and (min-width: 768px) {
+        #wrapper.safety .content-images img {
+          height: auto;
+          width: 100%; } }
 
 .engineering {
   /* box-shadow */ }

@@ -152,16 +152,19 @@ $(document).ready( function() {
 	/*--------------------------------/
 	/* SLIDER REVOLUTION
 	/*-------------------------------*/
-$(document).ready(function() {
-	if($('.revolution-slider-wrapper ').css('display') === 'none') {
-		$('.forcefullwidth_wrapper_tp_banner').remove();
-	}
-})
+	$(document).ready(function() {
+		if($('.revolution-slider-wrapper').css('display') === 'none') {
+			$('.forcefullwidth_wrapper_tp_banner').remove();
+		}
+	})
+
+	console.log($('#slider-fullscreen'))
 
 	if( $('#slider-fullscreen').length > 0) {
 		$('#slider-fullscreen').revolution({
 			sliderLayout: "fullscreen",
 			delay: 12000,
+			startDelay: 6000,
 			navigation: {
 				onHoverStop: 'off',
 				keyboardNavigation: 'on',
@@ -796,7 +799,7 @@ $(document).ready(function() {
 			sliderLayout: "fullwidth",
 			minHeight: 590,
 			disableProgressBar: 'on',
-			delay: 4000,
+			delay: 6000,
 			navigation: {
 				onHoverStop: 'off',
 				arrows: { enable: true },

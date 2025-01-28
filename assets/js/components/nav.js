@@ -33,7 +33,7 @@ class Navbar extends React.Component {
                   <li><a href="/wind.html">wind</a></li>
                   <li><a href="/solar.html">solar</a></li>
                   <li><a href="/engineering.html">engineering</a></li>
-                  <li><a href="/safetytraining.html">safety & training</a></li>
+                  <li><a href="/safetytraining.html">environmental, health & safety</a></li>
                   <li><a href="/experience.html">experience</a></li>
                 </ul>
               </li>

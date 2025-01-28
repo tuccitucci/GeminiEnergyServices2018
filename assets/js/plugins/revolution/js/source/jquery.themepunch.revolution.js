@@ -10,7 +10,7 @@
 	jQuery.fn.extend({
 
 		revolution: function(options) {
-
+			console.log("HERE HERE HERE")
 			// SET DEFAULT VALUES OF ITEM //
 			var defaults = {
 				delay:9000,
