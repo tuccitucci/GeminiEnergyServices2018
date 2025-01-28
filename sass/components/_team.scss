@@ -10,32 +10,45 @@
 }
 
 .team-member {
-	display: flex;
+	display: grid;
 	flex-direction: column;
 	background-color: $gray-muted-bg;
 	border-top: 2px solid $brand-primary;
-	margin-bottom: 0px !important;
-	padding-bottom: 15px;
+	height: auto;
+	grid-template-columns: 1fr;
 
 	@media only screen and (min-width: 768px) {
 		flex-direction: row;
-		margin-bottom: inherit !important;
+		margin-bottom: 15px;
+		height: 250px;
+		grid-template-columns: 175px 1fr;
+	}
+
+	.image-container {
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 800px;
+
+		@media only screen and (min-width: 768px) {
+			flex-direction: row;
+			margin-bottom: 15px;
+			height: 250px;
+		}
+
 	}
 
 	img {
-		width: auto;
-
-		@media only screen and (min-width: 768px) {
-			height: 250px;
-			width: 175px;
-		}
+		object-fit: cover;
+		width: 122%;
 	}
 
 	.member-info {
 		padding: 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 
 	.name {

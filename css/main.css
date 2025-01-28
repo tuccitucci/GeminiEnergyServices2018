@@ -7289,22 +7289,32 @@ div[class*="col-"] .icon-info-center, div[class*="col-"] .icon-info-border {
   flex-direction: column; }
 
 .team-member {
-  display: flex;
+  display: grid;
   flex-direction: column;
   background-color: #F8F8F8;
   border-top: 2px solid #004680;
-  margin-bottom: 0px !important;
-  padding-bottom: 15px; }
+  height: auto;
+  grid-template-columns: 1fr; }
   @media only screen and (min-width: 768px) {
     .team-member {
       flex-direction: row;
-      margin-bottom: inherit !important; } }
-  .team-member img {
-    width: auto; }
+      margin-bottom: 15px;
+      height: 250px;
+      grid-template-columns: 175px 1fr; } }
+  .team-member .image-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px; }
     @media only screen and (min-width: 768px) {
-      .team-member img {
-        height: 250px;
-        width: 175px; } }
+      .team-member .image-container {
+        flex-direction: row;
+        margin-bottom: 15px;
+        height: 250px; } }
+  .team-member img {
+    object-fit: cover;
+    width: 122%; }
   .team-member .member-info {
     padding: 15px 15px 0;
     display: flex;
