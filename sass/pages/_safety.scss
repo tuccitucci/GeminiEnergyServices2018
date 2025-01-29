@@ -10,30 +10,28 @@
   }
 
 
-    /* Center the table on the page */
-    section.safety-table {
-      display: flex;
-      justify-content: center;
-      align-items: start;
-      height: 55vh; /* Full viewport height */
-      gap: 3rem;
-        
-      table {
-        border-collapse: collapse;
-        width: 90%; /* You can adjust the width as needed */
-      }
-      th, td {
-        padding: 10px;
-        text-align: center; /* Center text in both headers and cells */
-      }
-      th {
-        background-color: #f2f2f2; /* Optional: gives a background color to header cells */
-      }
-      table, th, td {
-        border: 2px solid black;
-      }
+  section.safety-table {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+      
+    table {
+      border-collapse: collapse;
+      width: 90%; 
     }
-  
+    th, td {
+      padding: 10px;
+      text-align: center; 
+    }
+    th {
+      background-color: #f2f2f2; 
+    }
+    table, th, td {
+      border: 2px solid black;
+    }
+  }
+
 
 
 
